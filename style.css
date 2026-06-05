@@ -1,0 +1,234 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f9ff;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#1976D2;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FFD54F;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(25,118,210,.8),rgba(25,118,210,.8)),
+url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:900px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#FFD54F;
+color:#333;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+color:#1976D2;
+margin-bottom:50px;
+}
+
+/* CARD */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card i{
+font-size:40px;
+color:#1976D2;
+margin-bottom:15px;
+}
+
+/* VISI MISI */
+
+.visimisi{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* SARANA */
+
+.sarana{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.sarana-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* FORM */
+
+form{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+max-width:900px;
+margin:auto;
+}
+
+.input-group{
+margin-bottom:20px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+button{
+background:#1976D2;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#0d5cb6;
+}
+
+/* FOOTER */
+
+footer{
+background:#1976D2;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:36px;
+}
+
+.visimisi{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
